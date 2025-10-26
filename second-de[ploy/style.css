@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: #4c6ef5;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header h1 { margin: 0; }
+
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 70vh;
+}
+
+/* Sections */
+section { display: none; }
+section.active { display: block; }
+
+/* Home */
+#home { text-align: center; }
+#home h2 { font-size: 2rem; }
+
+/* Calculator */
+#calculator { text-align: center; }
+.calc-display {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+.calc-buttons button {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background: #e9ecef;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.calc-buttons button:hover {
+  background: #ced4da;
+}
+
+/* Clock */
+#clock {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* To-Do List */
+#todo input {
+  padding: .5rem;
+  font-size: 1rem;
+  width: 70%;
+}
+#todo button {
+  padding: .6rem 1rem;
+  margin-left: .5rem;
+  background: #4c6ef5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#todo button:hover { background: #364fc7; }
+#tasks {
+  margin-top: 1rem;
+  list-style: none;
+  padding: 0;
+}
+#tasks li {
+  background: #fff;
+  margin-bottom: .5rem;
+  padding: .7rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px;
+}
+#tasks li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+#tasks li button {
+  background: none;
+  border: none;
+  color: crimson;
+  font-size: 1rem;
+  cursor: pointer;
+}

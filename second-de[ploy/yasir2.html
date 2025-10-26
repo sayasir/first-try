@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multi-Tool SPA</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Multi-Tool App</h1>
+    <nav>
+      <a data-page="home">Home</a>
+      <a data-page="calculator">Calculator</a>
+      <a data-page="clock">Digital Time</a>
+      <a data-page="todo">To-Do</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome to Multi-Tool App</h2>
+      <p>This single-page app includes a Calculator, Digital Clock, and To-Do Task Manager — all in one place!</p>
+    </section>
+
+    <section id="calculator">
+      <h2>Calculator</h2>
+      <input type="text" id="calc-display" class="calc-display" readonly />
+      <div class="calc-buttons">
+        <button>7</button><button>8</button><button>9</button><button>/</button>
+        <button>4</button><button>5</button><button>6</button><button>*</button>
+        <button>1</button><button>2</button><button>3</button><button>-</button>
+        <button>0</button><button>.</button><button>=</button><button>+</button>
+        <button id="clear">C</button>
+      </div>
+    </section>
+
+    <section id="clock">
+      <h2>Digital Clock</h2>
+      <div id="time"></div>
+    </section>
+
+    <section id="todo">
+      <h2>To-Do List</h2>
+      <input type="text" id="taskInput" placeholder="Enter new task..." />
+      <button id="addTask">Add</button>
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
